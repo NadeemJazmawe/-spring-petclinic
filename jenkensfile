@@ -11,7 +11,7 @@ pipeline{
         }
         //  
 
-        stage("Save Artifact){
+        stage("Save Artifact"){
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
             }
